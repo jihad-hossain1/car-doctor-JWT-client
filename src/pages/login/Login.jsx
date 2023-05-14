@@ -35,7 +35,7 @@ const Login = () => {
             // Warnig: Local storage is not the best (second best place) to store access token
             localStorage.setItem("car-access-token", data.token);
           });
-        // navigate(from, { replace: true });
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
